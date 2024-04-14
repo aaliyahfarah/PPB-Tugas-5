@@ -24,30 +24,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-@Composable
-fun Greeting(name: String, nrp: String, kelas: String, modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
-        Text(
-            text = "Hello $name!",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Blue,
-        )
-        Text(
-            text = "Nrp: $nrp",
-            fontSize = 18.sp,
-            fontWeight = FontWeight.SemiBold,
-        )
-
-        Text(text = "Ini untuk tugas kelas $kelas")
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    LoginAppTheme {
-        Greeting("Aaliyah Farah Adibah","5025201075", "PPB-I")
-    }
-}
